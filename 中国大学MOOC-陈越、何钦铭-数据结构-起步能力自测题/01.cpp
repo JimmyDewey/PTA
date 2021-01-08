@@ -29,14 +29,14 @@ int main() {
     if (n < totalLines / 2 + 1) {
       temp = totalLines - n * 2;
     } else {
-      //cout << "------" << n << "------" << endl;
+      // cout << "------" << n << "------" << endl;
       temp = n * 2 - totalLines + 2;
     }
     chs.push_back(temp);
     // cout << temp << endl;
   }
 
-  for (int lines = 0; lines < chs.size(); lines++) {
+  for (unsigned int lines = 0; lines < chs.size(); lines++) {
     for (int j = chs[0] - chs[lines]; j; j -= 2) {
       cout << " ";
     }
@@ -47,6 +47,4 @@ int main() {
   }
   int left = count - max;
   cout << left;
-  
 }
-
